@@ -12,8 +12,11 @@ public class FactorialCalculator {
      * @return n's factorial
      */
     public static BigInteger fact(long n){
-        BigInteger result = new BigInteger(n + "");
-        if (n <= 1)
+        BigInteger result = new BigInteger(String.valueOf(n));
+
+        if(n < 0)
+            throw new IllegalArgumentException("Number must be > or = to 0");
+        else if (n == 1 || n == 0)
             return BigInteger.ONE;
         else // uses BigInteger multiply function to calculate factorial
             return result.multiply(fact(result.subtract(BigInteger.ONE).longValue()));

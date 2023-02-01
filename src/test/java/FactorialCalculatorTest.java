@@ -11,4 +11,10 @@ class FactorialCalculatorTest {
         assertEquals(BigInteger.valueOf(3628800),
                 FactorialCalculator.fact(10));
     }
+
+    @Test
+    void negativeNumberIllegalArgumentException() {
+        assertThrows(IllegalArgumentException.class,
+                () -> FactorialCalculator.fact(-1));
+    }
 }
