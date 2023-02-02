@@ -6,6 +6,10 @@ import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Author: Brian Morillo
+ * Description: Website word counter tests
+ */
 class WebWordCounterTest {
 
     /**
