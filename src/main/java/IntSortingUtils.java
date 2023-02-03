@@ -5,7 +5,7 @@ import java.util.Arrays;
  * Date: 2/28/22
  * Sorting Utilities
  */
-public class SortingUtils {
+public class IntSortingUtils {
 
     /**
      * Bubble sort method
