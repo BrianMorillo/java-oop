@@ -36,7 +36,7 @@ class SortingUtilsTest {
     }
 
     @Test
-    void quickSort() {
+    void quickSortTest() {
         int[] list = { 80, 40, 51, 22, 52, 97, 84, 89, 20, 29 };
         int[] expected = {20, 22, 29, 40, 51, 52, 80, 84, 89, 97};
         SortingUtils.quickSort(list);
@@ -45,7 +45,7 @@ class SortingUtilsTest {
     }
 
     @Test
-    void mergeSort() {
+    void mergeSortTest() {
         int[] list = { 71, 76, 42, 32, 100, 97, 51, 44 };
         int[] expected = {32, 42, 44, 51, 71, 76, 97, 100};
         SortingUtils.mergeSort(list);
